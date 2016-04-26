@@ -1,0 +1,162 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:300);
+@import url(https://fonts.googleapis.com/css?family=Crimson+Text:400italic);
+
+body {
+    text-align: center;
+    font-family: arial;
+    margin: 0 auto;
+}
+
+h1 {
+  font-family: 'Crimson Text', serif;
+  font-weight: lighter;
+  padding-bottom: 20px;
+}
+
+h2 {
+  font-family: 'Crimson Text', serif;
+  font-weight: lighter;
+  font-size: 32px;
+  padding-top: 30px;
+  border-top: 1px solid #c9c9c9;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #c9c9c9;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+#visit {
+  background-color: #f5f5f5;
+}
+
+p {
+  padding-top: 5px;
+  font-size: 15px;
+  font-family: 'Open Sans';
+  background-color: #f5f5f5;
+}
+
+#email{
+  font-family: 'Crimson Text';
+  font-weight: lighter;
+  font-size: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+#phone{
+  padding-bottom: 20px;
+}
+
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background: #f9f9f9;
+}
+
+h2, input, textarea, button{
+	font-family: 'Crimson Text', sans-serif;
+}
+
+::-webkit-input-placeholder{color: #777;}
+:-moz-placeholder { /* Firefox 18- */ color: #777;}
+::-moz-placeholder {  /* Firefox 19+ */  color: #777;}
+:-ms-input-placeholder {color: #777;}
+
+.container{
+	width: 90%;
+	padding: 15px;
+	margin: 50px auto;
+}
+
+.title-bar{
+	margin: 1px auto 10px auto;
+	width: 100px;
+	border-bottom: 1px solid #d9d9d9;
+}
+
+#contact input[type="text"],#contact input[type="email"], #contact textarea{
+	display: block;
+	padding: 10px;
+	margin: 10px auto;
+	width: 90%;
+	font-size: 18px;
+	color: #777;
+  border: 1px solid #ccc;
+}
+
+#contact textarea{
+	font-size: 16px;
+}
+
+#contact input:hover, #contact textarea:hover{
+	border: 1px solid #888;
+}
+#contact input:focus, #contact textarea:focus{
+	border: 1px solid #777;
+}
+
+
+#contact textarea{
+	max-width: 90%;
+	min-width: 90%;
+	max-height: 140px;
+	min-height: 140px;
+  resize: none;
+}
+
+#contact .send-button{
+	text-align: center;
+}
+
+#contact .send-button button[type="submit"]{
+  cursor: pointer;
+  background: #212121;
+	color: #fff;
+  border: none;
+	width: 100%;
+	font-size: 20px;
+	text-transform: uppercase;
+	transition: .5s ease;
+}
+
+#contact .send-button button[type="submit"]:hover{
+	background: #9e7874;
+}
+
+#contact .send-button button[type="submit"]:focus{
+	position: relative;
+	top: 2px;
+}
+
+/*##############\*
+    Responsive
+\*##############*/
+
+@media screen and (min-width: 640px){
+	.container{
+		width: 600px;
+	}
+
+	#contact .right,#contact .left{
+		display: block;
+	}
+
+	#contact .right{
+		float: right;
+		width: 50%;
+	}
+	#contact .left{
+		float: left;
+		width: 50%;
+	}
+	.cl{
+    clear: both;
+  }
+}

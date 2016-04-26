@@ -1,0 +1,141 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Your page title here :)</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/visit.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <header class="top_nav">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="men.html">Shop</a></li>
+        <li><a href="visit.html">Visit</a></li>
+        <li><a href="newsletter.html">Newsletter</a></li>
+      </ul>
+    <hr></hr>
+    </nav>
+    <h1 class="logo"><a href="index.html">Gullible</a></h1>
+  </header>
+
+
+    <style>
+      #map {
+        width: 1300px;
+        height: 400px;
+        margin: 0 auto 0 auto;
+      }
+    </style>
+  <body>
+    <div id="visit"><br></br>
+    <h1> Visit Us </h1>
+
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var mapDiv = document.getElementById('map');
+        var map = new google.maps.Map(mapDiv, {
+          center: {lat: 36.580201, lng: -78.356578},
+          zoom: 16
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+        async defer></script><br></br>
+      </div>
+
+    <h2> Get in touch with us ;) </h2>
+
+  <p id="email"><u>gullible@gmail.com</p></u>
+  <p>459 Imaginary road, Ninth Floor</p>
+  <p>Gilligans Island, VA 23917</p>
+  <p id="phone">+1 404 900 1738</p>
+
+  <div class="container">
+
+    <div class="title-bar"></div>
+
+    <form id="contact" action="#" method="post">
+      <div class="left">
+        <input type="text" placeholder="Name" required="required"/>
+        <input type="email" placeholder="Email" required="required"/>
+        <input type="text" placeholder="Subject" required="required"/>
+      </div>
+      <div class="right">
+        <textarea placeholder="Message" required="required"></textarea>
+      </div>
+      <div class="send-button cl">
+        <button type="submit" value="submit input">Send</button>
+      </div>
+    </form>
+  </div>
+
+
+  <footer id="footer">
+    <div class="row space">
+      <div class="three columns">
+        <div class="social_media">
+          <nav>
+            <h6>FIND US ON:</h6>
+            <ul>
+              <li><a href="index.html">Twitter</a></li>
+              <li><a href="shop.html">Facebook</a></li>
+              <li><a href="visit.html">Instagram</a></li>
+              <li><a href="contact.html">Pintrest</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="five columns">
+        <h4 class="foot">Gullible</h4>
+        <nav class="foot">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="visit.html">Visit</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="three columns">
+        <div class="newsletter">
+          <h6>Sign up for our newsletter!</h6>
+          <input type="email" placeholder="Email Address"></input>
+          <button class="button-primary" type="submit" value="submit input">Submit</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
