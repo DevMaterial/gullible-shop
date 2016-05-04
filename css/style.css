@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:300);
 @import url(https://fonts.googleapis.com/css?family=Crimson+Text:400italic);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display);
 
 body {
     text-align: center;
@@ -33,7 +34,7 @@ header ul {
 }
 
 .top_line {
-  width: 400px;
+  width: 500px;
 }
 
 .bot_nav {
@@ -286,6 +287,67 @@ h4, h6{
   font-weight: lighter;
   color: #4b4949;
 }
+
+/* About section */
+
+.tab-panel {
+  display: none;
+}
+
+.tab-panel.active {
+  display: block;
+}
+
+.about-text {
+  font-family: Ariel, serif;
+  color: #282828;
+  font-size: 30px;
+}
+
+.about {
+  padding-top: 100px;
+  padding-left: 70px;
+  float: left;
+}
+
+.tab-list {
+  margin: 0;
+  padding: 0;}
+
+.tab-list li {
+  display: inline-block;
+  list-style-type: none;
+  background-color: #0FA0CE;
+  border-bottom: 3px solid #5fcbe3;
+  font-family: 'Jacques Francois', serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;}
+
+.tab-list li a {
+  color: #f2f2f2;
+  display: block;
+  padding: 3px 10px 3px 10px;}
+
+.tab-list li.active, .tab-list li.hover {
+  background-color: #e5e5e5;
+  border-bottom: 3px solid #e5e5e5;}
+
+.tab-list li.active a, .tab-list li a:hover {
+  color: #666;
+  background-color: #e5e5e5;}
+
+.tab-panel {
+  display: none;
+  background-color: #e5e5e5;
+  color: #666;
+  min-height: 150px;
+  overflow: auto;}
+
+.tab-panel.active {
+  display: block;}
+
+.tab-panel p {
+  margin: 20px;}
 
 /* Image darken & text on hover */
 
